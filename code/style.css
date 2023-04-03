@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ul, li {
+  list-style: none;
+}
+
+.content {
+  background-color: #fff;
+  box-shadow: 3px 3px 20px 1px hsl(0, 0%, 95%);
+  border-radius: 20px;
+  display: flex;
+}
+
+.resultArea {
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsla(241, 72%, 46%, 1));
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.resultArea .title {
+  font-size: 20px;
+  font-weight: bold;
+  color:hsl(241, 100%, 85%);
+}
+
+.resultArea .resultScore {
+  background: linear-gradient(to bottom, hsla(241, 72%, 46%, 1), hsla(256, 72%, 46%, 0));
+  border-radius: 50%;
+  padding: 36px 40px;
+  margin: 30px 0;
+  display: inline-block;
+  line-height: 1.0;
+}
+
+.resultArea .resultScore .score {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.resultArea .resultScore div:nth-child(2) {
+  font-size: 12px;
+  color:hsl(241, 100%, 85%);
+}
+
+.grade {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 15px;
+  color: hsl(241, 100%, 85%);
+}
+
+.summaryArea {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.summaryArea .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.summaryArea ul {
+  height: 240px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.summaryArea ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 10px;
+  margin: 5px 0;
+  font-size: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.summaryArea ul li .left {
+  display: flex;
+  align-items: center;
+}
+
+.summaryArea ul li .left .icon {
+  margin-right: 10px;
+}
+
+.summaryArea ul li.reaction {
+  background-color: hsl(0, 60%, 98%);
+}
+
+.summaryArea ul li.reaction .left {
+  color: hsl(0, 100%, 67%);
+}
+
+.summaryArea ul li.memory {
+  background-color: hsl(42, 100%, 98%);
+}
+
+.summaryArea ul li.memory .left {
+  color: hsl(39, 100%, 56%);
+}
+
+.summaryArea ul li.verbal {
+  background-color: hsl(167, 100%, 97%);
+}
+
+.summaryArea ul li.verbal .left {
+  color: hsl(166, 100%, 37%);
+}
+
+.summaryArea ul li.visual {
+  background-color: hsl(235, 100%, 98%);
+}
+
+.summaryArea ul li.visual .left {
+  color: hsl(234, 85%, 45%);
+}
+
+.summaryArea .summaryScore span:nth-child(2) {
+  color: #757575;
+}
+
+.summaryArea button {
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background: rgb(24, 23, 78);
+  color: #fff;
+  margin-top: 15px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsla(241, 72%, 46%, 1));
+}
