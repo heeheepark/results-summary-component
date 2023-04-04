@@ -47,7 +47,7 @@ ul, li {
   line-height: 1.0;
 }
 
-.resultArea .resultScore .score {
+.resultArea .resultScore .totalScore {
   font-size: 60px;
   font-weight: bold;
 }
